@@ -1,0 +1,14 @@
+name = "redirection"
+main = "worker.ts"
+compatibility_date = "2026-01-01"
+
+# After running `npx wrangler kv namespace create LINKS_KV`,
+# paste the returned id below.
+kv_namespaces = [
+  { binding = "LINKS_KV", id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID" }
+]
+
+# Restrict the API to your published site's origin once you know it,
+# e.g. "https://yourusername.github.io". Leave as "*" while testing.
+[vars]
+ALLOWED_ORIGIN = "*"
