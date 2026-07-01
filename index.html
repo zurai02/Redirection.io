@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redirection</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="redirectScreen" class="redirect-screen" style="display:none;">
+  <div class="pulse"></div>
+  <div class="label" id="redirectLabel">Routing…</div>
+</div>
+
+<div class="shell" id="app">
+  <header class="top">
+    <div class="brand">
+      <div class="mark"></div>
+      <div class="name">REDIRECTION <span class="dim">/ link routing</span></div>
+    </div>
+    <div class="session-info" id="sessionInfo"></div>
+  </header>
+
+  <div id="authView"></div>
+  <div id="dashView" style="display:none;"></div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
